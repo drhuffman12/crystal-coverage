@@ -13,6 +13,7 @@ targets:
 
 scripts:
   postinstall: make bin
+  # TODO: Avoid using 'make bin'; it has issues, especially on Windows.
 
 dependencies:
   spectator:

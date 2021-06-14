@@ -4,3 +4,7 @@ shards:
     git: https://github.com/crystal-ameba/ameba.git
     version: 0.14.3
 
+  spectator:
+    git: https://gitlab.com/arctic-fox/spectator.git
+    version: 0.9.38+git.commit.92f758084d21959dabf0358087a846cf58cd9172
+

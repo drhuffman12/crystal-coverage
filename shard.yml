@@ -1,5 +1,5 @@
 name: coverage
-version: 0.1.0
+version: 0.1.1
 
 authors:
    - Yacine Petitprez <anykeyh@gmail.com>
@@ -19,4 +19,8 @@ development_dependencies:
     # github: veelenga/ameba
     github: crystal-ameba/ameba
 
+  spectator:
+    gitlab: arctic-fox/spectator
+    branch: master
+    
 license: MIT

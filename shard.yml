@@ -14,13 +14,14 @@ targets:
 scripts:
   postinstall: make bin
 
+dependencies:
+  spectator:
+    gitlab: arctic-fox/spectator
+    branch: master
+
 development_dependencies:
   ameba:
     # github: veelenga/ameba
     github: crystal-ameba/ameba
-
-  spectator:
-    gitlab: arctic-fox/spectator
-    branch: master
     
 license: MIT

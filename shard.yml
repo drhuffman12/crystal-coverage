@@ -11,10 +11,10 @@ targets:
   crystal-coverage:
     main: src/coverage/cli.cr
 
-scripts:
-  # postinstall: make bin
-  # TODO: Avoid using 'make bin'; it has issues, especially on Windows.
-  postinstall: crystal build src/coverage/cli.cr -o bin/crystal-coverage
+# scripts:
+#   # postinstall: make bin
+#   # TODO: Avoid using 'make bin'; it has issues, especially on Windows.
+#   postinstall: crystal build src/coverage/cli.cr -o bin/crystal-coverage
 
 dependencies:
   spectator:

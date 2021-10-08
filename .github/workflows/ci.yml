@@ -16,9 +16,9 @@ jobs:
         # os: [ubuntu-latest, macos-latest, windows-latest]
         os: [ubuntu-latest, macos-latest]
         crystal: [null]
-        include:
-          - os: ubuntu-latest
-            crystal: nightly
+        # include:
+        #   - os: ubuntu-latest
+        #     crystal: nightly
     runs-on: ${{matrix.os}}
 
     steps:

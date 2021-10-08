@@ -1,5 +1,5 @@
 name: coverage
-version: 0.1.0
+version: 0.1.1
 
 authors:
    - Yacine Petitprez <anykeyh@gmail.com>
@@ -11,11 +11,19 @@ targets:
   crystal-coverage:
     main: src/coverage/cli.cr
 
-scripts:
-  postinstall: make bin
+# scripts:
+#   # postinstall: make bin
+#   # TODO: Avoid using 'make bin'; it has issues, especially on Windows.
+#   postinstall: crystal build src/coverage/cli.cr -o bin/crystal-coverage
+
+dependencies:
+  spectator:
+    gitlab: arctic-fox/spectator
+    branch: master
 
 development_dependencies:
   ameba:
-    github: veelenga/ameba
-
+    # github: veelenga/ameba
+    github: crystal-ameba/ameba
+    
 license: MIT
